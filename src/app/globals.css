@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+/* Custom Design System Tokens */
+:root {
+  --color-sage-dark: #1E3A34;
+  --color-sage-medium: #2C4D44;
+  --color-sage-light: #EBF2EE;
+  --color-linen: #FAF7F2;
+  --color-sand: #F2ECE1;
+  --color-terracotta: #C47455;
+  --color-terracotta-hover: #AF6143;
+  --color-charcoal: #232B28;
+  --color-muted: #5C6863;
+  --color-border: #E5DEC3;
+}
+
+/* Smooth custom styles & micro-interactions */
+.glass-nav {
+  background: rgba(250, 247, 242, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #FAF7F2 0%, #F3EDE0 100%);
+}
+
+.accent-card {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.accent-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px -8px rgba(30, 58, 52, 0.08);
+}
